@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <title>Cool Gadgets</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#home">
+                    <img src="img/logo.png" alt="CoolGadgets Logo" width="120">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--- Banner -->
+    <section id="home" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center bg-warning text-white p-5">
+                <div>
+                    <h1>Discover the Future With CoolGadgets!</h1>
+                    <p class="mb-4"><em>Innovation is not solely about major discoveries.<br>It's about constantly challenging the status quo.</em></p>
+                    <a href="products.html" class="btn btn-light btn-lg">Shop Now &#10142;</a>
+                </div>
+            </div>
+            <div class="col-md-6 banner-image"></div>
+        </div>
+    </section>
+    
+    <!--- Featured Products -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/product-1.jpg" class="card-img-top" alt="Virtual Reality Glasses">
+                    <div class="card-body">
+                        <h5 class="card-title">Virtual Reality Glasses</h5>
+                        <p class="card-text">$299.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Virtual Reality Glasses">
+                            <input type="hidden" name="price" value="299.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/product-2.jpg" class="card-img-top" alt="Facial Recognition Home Hub">
+                    <div class="card-body">
+                        <h5 class="card-title">Facial Recognition Home Hub</h5>
+                        <p class="card-text">$149.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/product-3.jpg" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">3D Printing Pen</h5>
+                        <p class="card-text">$45.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="3D Printing Pen">
+                            <input type="hidden" name="price" value="$45.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/product-4.jpg" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Delivery Drone</h5>
+                        <p class="card-text">$199.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!--- New Product -->
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <img src="img/new-product.jpg" class="img-fluid" alt="New Product">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h2>Experience the Ultimate Sound Quality with Our New Wireless Earbuds</h2>
+                    <p>Our latest wireless earbuds are designed to provide you with the best sound experience. They are perfect for music lovers who want to enjoy their favorite tunes with excellent sound quality and convenience.</p>
+                    <a href="products.html" class="btn btn-warning btn-lg">Shop Now &#10142;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contact Us</h2>
+                    <p>We would love to hear from you. Whether you have a question about our products, need assistance with your order, or just want to provide feedback, feel free to contact us.</p>
+                    <form action="contact-submit.html" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Our Office</h2>
+                    <p>123 Innovation Road<br>Tech City, TX 12345<br>USA</p>
+                    <p><strong>Phone:</strong> (123) 456-7890<br><strong>Email:</strong> support@coolgadgets.com</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.95373531590446!3d-37.81627974242551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5776d0b4b0b5a67!2s123%20Innovation%20Road%2C%20Tech%20City%20TX%2012345%2C%20USA!5e0!3m2!1sen!2sus!4v1614301531626!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 CoolGadgets. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-eMNpSdTP8pGZrCh06L2bZ4eD0E55M4zPz10K78Kt7lnm6/6NVDl5B5N9jRV3fsgm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWi2tPHSqKCtwvBPGOEiFj3gW3X1tFUqNs3GxvYAcfgHjV9f5P6kc6KGo0" crossorigin="anonymous"></script>
+</body>
+</html>
